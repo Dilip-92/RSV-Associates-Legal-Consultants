@@ -1,65 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | RSV Associates & Legal Consultants</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — RSV Associates</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">RSV Associates & Legal Consultants</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="associates.html">Associates</a></li>
-                <li><a href="practice-areas.html">Practice Areas</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="container">
-            <h1>About RSV Associates & Legal Consultants</h1>
-            <p>
-                RSV Associates & Legal Consultants is committed to providing exceptional legal services
-                to individuals, businesses, and organizations. With years of experience and a team of
-                dedicated advocates, we ensure our clients receive the highest standard of legal
-                guidance and representation.
-            </p>
-            <p>
-                Our mission is to uphold justice, protect rights, and deliver practical solutions
-                tailored to each client’s needs. We specialize in multiple areas of law including
-                civil, criminal, corporate, family, and intellectual property.
-            </p>
-            <p>
-                At RSV Associates, integrity, professionalism, and client satisfaction are at the
-                core of everything we do. Our experienced team is always ready to guide you through
-                complex legal challenges with clarity and confidence.
-            </p>
-
-            <!-- Mission and Vision -->
-            <div class="mission-vision">
-                <div class="box">
-                    <h2>Our Mission</h2>
-                    <p>To provide reliable legal solutions while maintaining the highest ethical standards.</p>
-                </div>
-                <div class="box">
-                    <h2>Our Vision</h2>
-                    <p>To be recognized as a leading law firm known for excellence, trust, and client satisfaction.</p>
-                </div>
-            </div>
+  <header class="site-header small">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        
+        <div>
+           <h2 style="color: Blue;">RSV Associates & Legal Consultants</h2>
         </div>
-    </section>
+      </a>
+      <button id="nav-toggle-4" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" id="site-nav-4">
+        <a href="index.html">Home</a>
+        <a href="associates.html">Associates</a>
+        <a href="practice.html">Practice Areas</a>
+        <a href="contact.html" class="active cta">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 RSV Associates & Legal Consultants. All rights reserved.</p>
-    </footer>
+  <main class="container contact-page">
+    <h2>Contact Us</h2>
+    <p>Fill out the form and we will get back to you within 48 hours.</p>
 
+    <div class="grid grid-2">
+      <form id="contact-form" class="card">
+        <label>Full name<input type="text" id="name" required></label>
+        <label>Email<input type="email" id="email" required></label>
+        <label>Phone<input type="tel" id="phone"></label>
+        <label>Message<textarea id="message" rows="6" required></textarea></label>
+        <p class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+        </p>
+        <p id="form-msg" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="card">
+        <h4>Office</h4>
+        <p>RSV Associates & Legal Consultants<br>123 Legal Street, City, State<br>Phone: +91 98765 43210</p>
+        <h4>Email</h4>
+        <p>hello@rsvassociates.example</p>
+      </aside>
+    </div>
+
+  </main>
+
+  <footer class="site-footer small">
+    <div class="container footer-inner">
+      <div>© <span id="year-4"></span> RSV Associates</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
