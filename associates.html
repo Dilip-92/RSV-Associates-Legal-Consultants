@@ -38,25 +38,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oval Profile Photo</title>
+  <title>Advocate Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    .profile-pic {
-      width: 200px;         /* adjust size */
-      height: 250px;        /* taller than width → oval */
-      border-radius: 50%;   /* makes it oval */
-      object-fit: cover;    /* crop image nicely */
-      border: 3px solid #004080; /* optional border */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .profile-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 30px;
+      width: 300px;
+    }
+    .profile-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%; /* makes image round */
+      object-fit: cover;
+      border: 3px solid #004080; /* navy border */
+      margin-bottom: 15px;
+    }
+    .profile-card h2 {
+      margin: 10px 0 5px;
+      color: #004080;
+      font-size: 22px;
+    }
+    .profile-card p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .profile-card .contact {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #333;
     }
   </style>
 </head>
 <body>
 
-  <h2>My Profile</h2>
-  <!-- Replace profile.jpg with your photo -->
-  <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+  <div class="profile-card">
+    <!-- Replace with advocate photo -->
+    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Advocate Photo">
+    
+    <h2>Adv. Rajesh Kumar</h2>
+    <p>Corporate & Civil Law Specialist</p>
+    
+    <div class="contact">
+      <p>Email: rajesh.kumar@example.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+  </div>
 
 </body>
 </html>
+
 
         <h4>Adv. Vijay Singh Yadav</h4>
         <p class="meta">Senior Partner — 18 years</p>
